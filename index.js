@@ -5,8 +5,6 @@ const employee = {
   };
   
   function updateEmployeeWithKeyAndValue(employee, key, value) {
-    // Alternate using ES6 Spread operators:
-    // return { ...employee, ...{ [key]: value } }
     return Object.assign({}, employee, { [key]: value });
   }
   
@@ -17,8 +15,6 @@ const employee = {
   }
   
   function deleteFromEmployeeByKey(driver, key) {
-    // Alternate using ES6 Spread operators:
-    // const newObj = { ...employee}
     const newObj = Object.assign({}, employee);
   
     delete newObj[key];
